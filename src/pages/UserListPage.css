@@ -1,0 +1,109 @@
+/* UserListPage.css */
+.user-list {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-list h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #4b5563; /* Darker gray */
+}
+
+.user-list .filter-options {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px; /* Space between filter inputs */
+    justify-content: center; /* Center the filter inputs */
+}
+
+.user-list .filter-options input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Rounded corners */
+    width: 300px; /* Fixed width for search input */
+}
+
+.user-list .filter-options select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Rounded corners */
+}
+
+/* Table Styles */
+.user-list table {
+    width: 100%;
+    border-collapse: collapse; /* Merge borders */
+}
+
+.user-list th, .user-list td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #e5e7eb; /* Light gray border for rows */
+    position: relative;
+}
+
+.user-list th {
+    background-color: #f1f5f9; /* Light blue-gray for header */
+    color: #111827; /* Almost black for text */
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.user-list tr:nth-child(even) {
+    background-color: #f9fafb; /* Light gray for alternate rows */
+}
+
+.user-list tr:hover {
+    background-color: #e5e7eb; /* Slightly darker gray on hover */
+}
+
+.user-list td {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.user-list td:last-child {
+    border-right: none; /* Prevent double border */
+}
+
+.user-list button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.user-list button.edit-button {
+    background-color: #3b82f6; /* Blue color for edit button */
+    color: white;
+}
+
+.user-list button.edit-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.user-list button.delete-button {
+    background-color: #ef4444; /* Red color for delete button */
+    color: white;
+}
+
+.user-list button.delete-button:hover {
+    background-color: #dc2626; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Add some margin for pagination */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,57 @@
+/* Overview.css */
+
+.overview-container {
+    display: flex; /* Flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between items */
+}
+
+.total-users-card {
+    background: #02fdf0; /* White background for the total users card */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Centered text */
+}
+
+.status-cards {
+    display: flex; /* Flexbox to align status cards */
+    justify-content: space-between; /* Space between cards */
+}
+
+.overview-card {
+    flex: 1; /* Allow cards to grow equally */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Centered text */
+    margin: 0 10px; /* Margin between cards */
+    color: #fff; /* White text color for contrast */
+}
+
+.active-users-card {
+    background: #34D399; /* Green background for active users */
+}
+
+.inactive-users-card {
+    background: #EF4444; /* Red background for inactive users */
+}
+
+.overview-card h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Font size for the title */
+}
+
+.overview-card p {
+    font-size: 24px; /* Font size for the number */
+    font-weight: bold; /* Bold font weight for emphasis */
+    margin: 10px 0 0 0; /* Space above the number */
+}
+
+#p-o
+{
+    color: #000000;
+    font-size: 24px; /* Font size for the number */
+    font-weight: bold;
+
+}
